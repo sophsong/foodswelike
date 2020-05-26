@@ -4,7 +4,7 @@ import './App.css';
 import NavBar from './components/NavBar'
 import MainContainer from './containers/MainContainer'
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Home from './components/Home'
 
 class App extends Component {
@@ -12,8 +12,9 @@ class App extends Component {
     return (
      <div className="App">
        <Router>
+       <NavBar />
        <Route exact path='/' component={Home}/>
-        <NavBar />
+        
        </Router>
       </div>
     );
