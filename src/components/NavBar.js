@@ -1,21 +1,27 @@
 import React from 'react'
-import {Menu, Icon} from 'semantic-ui-react';
-import {Link} from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 class NavBar extends React.Component {
 
     render() {
-        return (<div>
-          <Menu>
-            <Menu.Item header>Build a Roll</Menu.Item>
-            <Menu.Item as={Link} to='/'>
-              <Icon name="home"/>
-            </Menu.Item>
-            <Menu.Item as={Link} to='/rolls' name='Rolls'></Menu.Item>
-            <Menu.Item as={Link} to='/rolls/new' name='Create A Roll'></Menu.Item>
-            <Menu.Item as={Link} to='/ingredients' name='Ingredients'></Menu.Item>
-          </Menu>
-        </div>);
+        return (<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+  
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <a href="#">Restaurants</a>
+            <a href="#">Reviews</a>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </nav>);
       }
 
 
