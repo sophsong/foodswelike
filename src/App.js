@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar'
@@ -7,15 +7,17 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 import Home from './components/Home'
 
-function App() {
-  return (
-    <div className="App">
+class App extends Component {
+  render(){
+    return (
+     <div className="App">
        <Router>
        <Route exact path='/' component={Home}/>
         <NavBar />
        </Router>
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
 export default App;
