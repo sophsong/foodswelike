@@ -5,6 +5,7 @@ import NavBar from './components/NavBar'
 import MainContainer from './containers/MainContainer'
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
+
 import Home from './components/Home'
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
        <Router>
        <NavBar />
        <Route exact path='/' component={Home}/>
+       {/* <Route exact path='/' component={About}/> */}
         
        </Router>
       </div>
