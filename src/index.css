@@ -11,3 +11,95 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+/* component font color */
+.home {
+  color: #F65058FF;
+}
+
+.login {
+  color: #F65058FF;
+}
+
+.restaurants {
+  color: #F65058FF;
+}
+
+.signup {
+  color: #F65058FF;
+  background-color:#F0F8FF
+}
+
+/* .body {
+  background-color: #F0F8FF;
+} */
+
+.about {
+  color: #F65058FF;
+}
+
+.appname {
+  color: #F65058FF;
+}
+
+
+.navbar-content {
+  -webkit-box-align: center;
+  align-items: center;
+  /* background-color: #fff; */
+  display: flex;
+  font-family: ov-gothic,sans-serif;
+  font-size: 16px;
+  height: 55px;
+  -webkit-box-pack: justify;
+  justify-content: space-around;
+  /* position: fixed; */
+  transform: translateZ(0);
+  transition: background-color .15s ease-in-out;
+  width: 100%;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 1300px;
+  background-color: #28334AFF ;
+}
+
+/* .navbar {
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  font-family: ov-gothic,sans-serif;
+  font-size: 16px;
+  height: 72px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  position: fixed;
+  transform: translateZ(0);
+  transition: background-color .15s ease-in-out;
+  width: 100%;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 1656px;
+  background-color: #d8f9e2;
+} */
+
+.logo {
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  fill: currentColor;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-ordinal-group: 3;
+  order: 2;
+  transform: translateZ(0);
+  font-size: 30px;
+  transition: transform .2s;
+  color: black;
+  /* padding: 0% 30%; */
+  margin: 0;
+  height: 20%;
+}
+
