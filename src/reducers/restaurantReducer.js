@@ -1,8 +1,10 @@
-export default function restaurantReducer(state = {restaurants: []}, action) {
+export default function restaurantReducer(state = [], action) {
 
     switch (action.type) {
       case 'FETCH_RESTAURANTS':
-        return {restaurants: action.payload}
+        return [...action.payload]
+     case 'SHOW_RESTAURANT':
+       return {restaurants: action.payload} 
       default:
         return state
     }

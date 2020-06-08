@@ -5,16 +5,9 @@ import {fetchRestaurants} from '../actions/fetchRestaurants'
 
 
 
+
 class Restaurants extends React.Component{
-    
-
-  // constructor(props){
-  //   super(props);
-  //   this.state = {
-  //     restaurants: this.props.restaurants
-  //   }
-
-  // }//end of constructor
+  
 
 
     componentDidMount() {

@@ -1,28 +1,30 @@
-// import React from 'react'
+import React from 'react';
+import {showRestaurant} from '../actions/showRestaurant';
+import {connect} from 'react-redux';
 
-// class Restaurant extends React.Component {
+class Restaurant extends React.Component {
+
+    componentDidMount(){
+        this.props.showRestaurant();
+       
+    }//end of function
 
 
-//     componentDidMount(){
-//         this.props.fetchRestaurants();
-//     } //end of componentdidmount
 
-//     render(){
-//         return(
-//             <div> 
-//                 <h1> Restaurant</h1>
-//         {this.props.restaurants && this.props.restaurants.map((restaurant)=> {return <div key={restaurant.id}> <h3>
-//                 <Link to={`/restaurants/${restaurnt.id}`}>{restaurnt.name}</Link>
-//               </h3>})}
+    render(){
+        return(
+            console.log(this.props)
+            <h1> {this.props.restaurant.name}</h1>
+        ) //end of return
+    }//end of render
 
-//             </div>
-//         )//end of return 
-//     }//end of render
 
-// } //end of class
+}//end of restaurant
 
-// const mapStateToProps = (state) => {
-//     return {restaurants: state.restaurants}
-//   }
 
-//   export default connect(mapStateToProps, {fetchRestaurants})(Restaurants)
+const mapStateToProps = (state) => {
+   restaurant: state.restaurant
+}
+
+
+export default connect(mapStateToProps, {showRestaurant})(Restaurant)
